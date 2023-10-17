@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Cuvette Module Test</title>
+    </head>
+    <body>
+        <div class="main">
+            <div class="header">
+                <div class="topic">
+                    <h1>ROCK</h1>
+                    <h1>PAPER</h1>
+                    <h1>SCISSOR</h1>
+                </div>
+                <div class="scoreboard">
+                    <div class="computer">
+                        <h3 class="score">COMPUTER</h3>
+                        <h3 class="score">SCORE</h3>
+                        <h2 id="computerpoint">0</h2>
+                    </div>
+                    <div class="human">
+                        <h3 class="score">YOUR</h3>
+                        <h3 class="score">SCORE</h3>
+                        <h2 id="humanpoint">0</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="choose" id="choose">
+                <span class="triangleone"></span>
+                <span class="triangletwo"></span>
+                <div class="rock leftside" id="rock"><img src="rock.png" alt=""></div>
+                <div class="scissor rightside" id="scissor"><img src="scissor.png" alt=""></div>
+                <div class="paper bottom" id="paper"><img src="paper.png" alt=""></div>
+            </div>
+            <div class="result" id="result">
+                <div class="left">
+                    <h2 class="chosen">YOU PICKED</h2>
+                    <div class="top leftside" id="userwillwin">
+                        
+                        <div class="mid">
+                            <div class="low"></div>
+                        </div>
+                    </div>
+                    <div class="selection" id="selecteduser"></div>
+                </div>
+                <div class="middle">
+                    <h1 id="win"></h1>
+                    <h2 id="res"></h2>
+                    <button class="btn" id="replay">PLAY AGAIN</button>
+                </div> 
+                <div class="right">
+                    <h2 class="chosen">PC PICKED</h2>
+                    <div class="top rightside" id="pcwillwin">
+                        <div class="mid">
+                            <div class="low"></div>
+                        </div>
+                    </div>
+                    <div class="selection" id="selectedpc"></div>
+                </div>
+            </div>
+        </div>
+        <div class="rules" id="rules">
+            <div class="exit" id="exit">
+                <h1>X</h1>
+            </div>
+            <h1>Game Rules</h1>
+            <ul>
+                <li>
+                    Rock beats scissors, scissors beat paper, and paper beats
+                    rock.
+                </li>
+                <li>
+                    Agree ahead of time whether you’ll count off “rock, paper,
+                    scissors, shoot” or just “rock, paper, scissors.”
+                </li>
+                <li>
+                    Use rock, paper, scissors to settle minor decisions or
+                    simply play to pass the time
+                </li>
+                <li>
+                    If both players lay down the same hand, each player lays
+                    down another hand
+                </li>
+            </ul>
+        </div>
+        <div class="switch">
+            <button class="next" id="end">NEXT</button>
+            <button onclick="Rule()" class="next" id="next">RULES</button>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
